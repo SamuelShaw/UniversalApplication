@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="iPhoneStoryboard" id="BYZ-38-t0r" customClass="ViewController" customModule="UniversalApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is an IPhone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOS-fg-EfA">
+                                <rect key="frame" x="20" y="20" width="374" height="32"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="kqr-7g-XYN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbU-Na-9t4">
+                                <rect key="frame" x="20" y="98" width="374" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjD-jW-USg">
+                                <rect key="frame" x="20" y="65" width="374" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Press Me!"/>
+                                <connections>
+                                    <action selector="pressMeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXz-a7-hdI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="TbU-Na-9t4" secondAttribute="trailing" id="AgE-KR-6QZ"/>
+                            <constraint firstItem="HOS-fg-EfA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Bb5-9S-0Fg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HOS-fg-EfA" secondAttribute="trailing" id="I5p-6L-ME8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kjD-jW-USg" secondAttribute="trailing" id="IGu-mN-bZq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="kjD-jW-USg" secondAttribute="leading" id="Rxz-vg-uSy"/>
+                            <constraint firstItem="kjD-jW-USg" firstAttribute="top" secondItem="HOS-fg-EfA" secondAttribute="bottom" constant="13" id="ZTg-S8-Rq0"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="HOS-fg-EfA" secondAttribute="leading" id="bFZ-xG-Da5"/>
+                            <constraint firstItem="TbU-Na-9t4" firstAttribute="top" secondItem="kjD-jW-USg" secondAttribute="bottom" constant="3" id="f9y-fs-ggI"/>
+                            <constraint firstItem="kjD-jW-USg" firstAttribute="width" secondItem="HOS-fg-EfA" secondAttribute="width" id="fOi-Qy-qIZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="TbU-Na-9t4" secondAttribute="leading" id="zph-CM-4cn"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="label" destination="TbU-Na-9t4" id="Tid-fA-Ein"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="332"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aC3-rX-oTi">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Li9-TK-egi">
+            <objects>
+                <viewController storyboardIdentifier="iPadStoryboard" id="aC3-rX-oTi" customClass="ViewController" customModule="UniversalApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aDU-Xb-IUT"/>
+                        <viewControllerLayoutGuide type="bottom" id="ifa-xP-Kec"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="92k-g6-689">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is an IPad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rV-7l-y2R">
+                                <rect key="frame" x="20" y="20" width="728" height="32"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="omL-qH-r4K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kr-CQ-Y8u">
+                                <rect key="frame" x="20" y="93" width="728" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoA-Sm-jZz">
+                                <rect key="frame" x="20" y="60" width="728" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Press Me!"/>
+                                <connections>
+                                    <action selector="pressMeButtonPressed:" destination="aC3-rX-oTi" eventType="touchUpInside" id="lYN-qK-LZn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="WoA-Sm-jZz" secondAttribute="leading" id="302-an-JXR"/>
+                            <constraint firstItem="WoA-Sm-jZz" firstAttribute="top" secondItem="9rV-7l-y2R" secondAttribute="bottom" constant="8" id="33A-Ef-jYY"/>
+                            <constraint firstItem="6Kr-CQ-Y8u" firstAttribute="top" secondItem="WoA-Sm-jZz" secondAttribute="bottom" constant="3" id="Fyr-zp-cVC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WoA-Sm-jZz" secondAttribute="trailing" id="Lqg-jM-JcP"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9rV-7l-y2R" secondAttribute="leading" id="M5h-l2-eUa"/>
+                            <constraint firstItem="6Kr-CQ-Y8u" firstAttribute="top" secondItem="WoA-Sm-jZz" secondAttribute="bottom" constant="3" id="OhQ-z7-RBx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9rV-7l-y2R" secondAttribute="trailing" id="eyp-DC-N0j"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="6Kr-CQ-Y8u" secondAttribute="leading" id="pVb-2u-OVQ"/>
+                            <constraint firstItem="9rV-7l-y2R" firstAttribute="top" secondItem="aDU-Xb-IUT" secondAttribute="bottom" id="vvr-AM-wb2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Kr-CQ-Y8u" secondAttribute="trailing" id="y57-2K-1cl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Fyr-zp-cVC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="label" destination="6Kr-CQ-Y8u" id="mKf-J2-Dnj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qod-gm-sYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="327"/>
+        </scene>
+    </scenes>
+</document>
